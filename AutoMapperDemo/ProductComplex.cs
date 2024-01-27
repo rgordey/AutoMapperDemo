@@ -11,5 +11,5 @@ public class ProductComplex
     public string SKU { get; set; } = default!;
     [Column(TypeName = "decimal(5, 2)")]
     public decimal Price { get; set; }
-    public Dimension Dimension { get; set; }
+    public Dimension Dimension { get; set; } = new Dimension();
 }
